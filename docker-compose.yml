@@ -10,7 +10,7 @@ services:
       - .server-data:/server
     ports:
       - 25565:25565
-      - 25575:25574
+      - 25575:25575
     container_name: ${CONTAINER_NAME}
     
 volumes:
