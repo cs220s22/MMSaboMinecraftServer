@@ -1,2 +1,2 @@
 #!/bin/bash
-scp -i ~/.ssh/220rsa.pem -prq ec2-user@ec2-54-163-7-4.compute-1.amazonaws.com:~/.server-data ~/Courses/220/final-project/MMSaboMinecraftServer/
+scp -i ~/.ssh/220rsa.pem -prq ${ECTOO_INSTANCE}:~/.server-data ~/Courses/220/final-project/MMSaboMinecraftServer/
