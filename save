@@ -1,2 +1,3 @@
 #!/bin/bash
+export ECTOO_INSTANCE=ec2-user@ec2-184-72-89-44.compute-1.amazonaws.com
 scp -i ~/.ssh/220rsa.pem -prq ${ECTOO_INSTANCE}:~/.server-data ~/Courses/220/final-project/MMSaboMinecraftServer/

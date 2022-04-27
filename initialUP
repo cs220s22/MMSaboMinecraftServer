@@ -1,5 +1,5 @@
 #!/bin/bash
-export ECTOO_INSTANCE=ec2-user@ec2-3-93-185-108.compute-1.amazonaws.com
+export ECTOO_INSTANCE=ec2-user@ec2-184-72-89-44.compute-1.amazonaws.com
 ssh -i ~/.ssh/220rsa.pem ${ECTOO_INSTANCE} -y "sudo yum -y update; sudo yum install java-17-amazon-corretto.x86_64 -y; exit"
 scp -i ~/.ssh/220rsa.pem -r ~/Courses/220/final-project/MMSaboMinecraftServer/.server-data ${ECTOO_INSTANCE}:
 ssh -i ~/.ssh/220rsa.pem ${ECTOO_INSTANCE} -y "cd .server-data; java -Xmx4G -jar paper-1.17.1-408.jar nogui;" &
