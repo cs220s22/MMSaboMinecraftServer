@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh -i ~/.ssh/220rsa.pem ec2-user@ec2-54-163-7-4.compute-1.amazonaws.com -y "pkill java;"

@@ -1,0 +1,2 @@
+#!/bin/bash
+scp -i ~/.ssh/220rsa.pem -r ~/Courses/220/final-project/MMSaboMinecraftServer/.server-data ec2-user@ec2-54-163-7-4.compute-1.amazonaws.com:
