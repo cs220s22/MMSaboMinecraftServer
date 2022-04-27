@@ -1,2 +1,3 @@
 #!/bin/bash
+export ECTOO_INSTANCE=ec2-user@ec2-184-72-89-44.compute-1.amazonaws.com
 ssh -i ~/.ssh/220rsa.pem ${ECTOO_INSTANCE} -y "cd .server-data; java -Xmx4G -jar paper-1.17.1-408.jar nogui;" &
