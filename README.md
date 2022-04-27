@@ -25,3 +25,7 @@ To Run On AWS EC2 Instance:
 5. run script?
 
 
+!!! make script for local
+figure out environment variable
+
+
