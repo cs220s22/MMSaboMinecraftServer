@@ -1,3 +1,3 @@
 #!/bin/bash
-ssh -i ~/.ssh/220rsa.pem ec2-user@ec2-3-93-185-108.compute-1.amazonaws.com -y "pkill java;"
-scp -i ~/.ssh/220rsa.pem -prq ec2-user@ec2-3-93-185-108.compute-1.amazonaws.com:~/.server-data ~/Courses/220/final-project/MMSaboMinecraftServer/
+ssh -i ~/.ssh/220rsa.pem ${ECTOO_INSTANCE} -y "pkill java;"
+scp -i ~/.ssh/220rsa.pem -prq ${ECTOO_INSTANCE}:~/.server-data ~/Courses/220/final-project/MMSaboMinecraftServer/
